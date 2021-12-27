@@ -1,0 +1,584 @@
+/* ESTILOS GENERALES */
+
+body {
+  background-color: #faf9f6;
+  width: 100%;
+}
+
+.fondoVerde {
+  background-color: #faf9f6;
+}
+
+.blanco {
+  color: #faf9f6;
+}
+
+.rosa {
+  color: #d6beb7;
+}
+
+.negro {
+  color: #272727;
+}
+.bold {
+  font-weight: bold;
+}
+
+.mayor {
+  font-size: 40px;
+}
+
+.menor {
+  font-size: 20px;
+}
+
+.playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+.paddTop {
+  padding-top: 50px;
+}
+
+.sinLinea {
+  text-decoration: none;
+}
+
+.sinLinea:hover {
+  color: #272727;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mtop10 {
+  margin-top: 10px;
+}
+
+.mtop70 {
+  margin-top: 70px;
+}
+
+.mright10 {
+  margin-right: 10px;
+}
+
+.mright20 {
+  margin-right: 20px;
+}
+
+/* ---------- BARA MENÚ/cabecera ---------*/
+nav {
+  width: 100%;
+  position: fixed;
+  height: 110px;
+  top: 0;
+  background-color: #faf9f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+.navLogeado {
+  display: flex;
+}
+
+.mright50 {
+  margin-right: 50px;
+}
+
+/* TEXTOS DEL MENÚ */
+
+.logo {
+  color: #d6beb7;
+  text-decoration: none;
+}
+.logo:hover {
+  color: #272727;
+}
+
+/* ---------- BARA MENÚ/cabecera ---------*/
+
+/* CLASE PARA TODOS LOS DIVS DE ARRRIBA O PRIMEROS DIVS DE CASA PÁGINA PARA QUE NO QUEDEN DEBAJO DEL MENÚ */
+.top {
+  padding-top: 150px;
+}
+
+.top2 {
+  padding-top: 200px;
+}
+
+/* ---------- COMPONENTE HOME/COMPONENTE PRESENTACIÓN ---------*/
+
+/* FOTO + TEXTO PÁGINA DE INICIO*/
+.inicio {
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+/* FOTO PÁGINA DE INICIO*/
+.inicio img {
+  float: right;
+  width: 350px;
+}
+
+/* TEXTO PÁGINA DE INICIO*/
+.textoInicio {
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+/* INTERLINEADO MENOR DE LAS TRES PRIMERAS FRASES*/
+.interlineado {
+  line-height: 48px;
+}
+
+/* buscador*/
+.buscador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #d6beb7;
+  padding-left: 60px;
+  padding-right: 50px;
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.buscador input {
+  width: 100%;
+  background-color: #d6beb7;
+  border: none;
+  padding: 5px;
+}
+
+.buscador input::placeholder {
+  color: #faf9f6;
+  font-weight: normal;
+}
+
+.buscador input[value] {
+  color: #faf9f6;
+}
+
+/* ---------- COMPONENTE HOME/COMPONENTE PRESENTACIÓN ---------*/
+
+/* CADA FILA DE CATEGORÍA*/
+.categorias {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.categorias h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: center;
+  color: #272727;
+}
+
+/* CADA CATEGORÍA*/
+.cardCategoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.borde {
+  border: 1px solid #d6beb7;
+  border-radius: 5px;
+}
+.borde:hover {
+  background-color: #d6beb7;
+}
+
+.cardCategoria img {
+  width: 90%;
+}
+
+/* BOTON TODAS LAS RECETAS*/
+.todaCategoria {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.pb {
+  padding-bottom: 30px;
+}
+
+/* ---------- COMPONENTE HOME/COMPONENTE INSTAGRAM---------*/
+
+.instagram h2 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.instagram h3 {
+  font-size: 28px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.galeriaInstagram {
+  margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.imgInstagram {
+  width: 300px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ---------- COMPONENTE HOME - FECHA TO TOP ---------*/
+.botonTop {
+  border: none;
+  background-color: #faf9f6;
+  margin-left: 90%;
+  margin-bottom: 50px;
+  bottom: 50px;
+}
+
+.arrow {
+  font-size: 50px;
+}
+
+/* ---------- COMPONENTE RECETARIO ---------*/
+/* LISTADO RECETAS SEGÚN LA CATEGORIA ELEGIDA*/
+
+.cardRecetario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.corazon {
+  color: #cc7f68;
+  font-size: 32px;
+  text-align: right;
+  margin-bottom: 3px;
+}
+.corazon:hover {
+  color: #faf9f6;
+}
+
+.mb-10 {
+  margin-bottom: -32px;
+}
+
+/* ---------- COMPONENTE RECETAS ---------*/
+/* CADA RECETA (cada card) EN EL LISTADO SEGÚN CATEGORÍA ELEGIDA */
+.cardReceta {
+  padding: 10px;
+  width: 350px;
+  margin: 10px;
+}
+
+.cardReceta Link {
+  text-decoration: none;
+}
+
+.cardReceta img {
+  width: 100%;
+}
+
+/* VISUALIZACIÓN COMPLETA DE LA RECETA ELEGIDA*/
+.receta {
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.receta img {
+  width: 90%;
+}
+
+.carousel {
+  z-index: -100;
+  width: 90%;
+}
+
+.mRight25 {
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.marginRignt {
+  margin-right: 10px;
+}
+
+/* TAB QUE SEPARA PASOS E INGREDIENTES*/
+.tabReceta {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  width: 90%;
+}
+
+.receta .nav-tabs {
+  border-bottom: 1px solid #d6beb7;
+  width: 90%;
+}
+
+.pasos {
+  display: flex;
+  margin-left: 20px;
+}
+
+.ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  /* box-sizing: content-box; */
+  background-color: #d6beb7;
+  color: #faf9f6;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+
+.truco {
+  margin-left: 25px;
+}
+
+.circulo {
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+/* LINK VOLEVER A LISTADO SEGÚN CATEGORIA*/
+.volver {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.negroLink {
+  color: #272727;
+}
+.negroLink:hover {
+  color: #d6beb7;
+}
+
+/* ---------- COMPONENTE MICUENTA ---------*/
+/* FORMULARIO DE LOGIN Y REGISTRO EN PÁGINA MI CUENTA*/
+
+.miCuenta {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  padding-left: 20%;
+  padding-right: 20%;
+  /* background-color: #ffffff71; */
+}
+
+/* TABS DE INICIO SESIÓN - REGISTRO*/
+
+.nav-tabs {
+  border-bottom: 1px solid #d6beb7;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+  color: #272727;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #272727;
+  border-color: #d6beb7 #d6beb7;
+  font-weight: bold;
+  background-color: #faf9f6;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover {
+  color: #d6beb7;
+  border-color: #d6beb7 #d6beb7;
+  background-color: #faf9f6;
+}
+
+.nav-link {
+  color: #d6beb7;
+}
+
+.nav-link:hover {
+  color: #d6beb7;
+}
+
+/* FORMULARIOS INICIO SESIÓN - REGISTRO*/
+
+.formularioLogin {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.formularioLogin input {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.miCuenta input {
+  background-color: #d6beb71c;
+  border: 1px solid #d6beb7;
+}
+
+.miCuenta ::placeholder {
+  color: #272727;
+}
+
+/* BOTON FORMULARIO INICIO SESIÓN - REGISTRO*/
+.botonLogin {
+  margin-top: 20px;
+  background-color: #d6beb7;
+  border: 1px solid #d6beb7;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: #faf9f6;
+  box-sizing: content-box;
+  text-decoration: none;
+}
+.botonLogin:hover {
+  background-color: #faf9f6;
+  color: #d6beb7;
+  border: 1.75px solid #d6beb7;
+}
+
+.areaUsuario {
+  padding-bottom: 100px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.tabArea {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.modificarDatos {
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.inputModificar {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid #d6beb7;
+  background-color: #faf9f6;
+  width: 300px;
+}
+
+.botonmodificar {
+  margin-top: 20px;
+  background-color: #d6beb7;
+  border: 1px solid #d6beb7;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  color: #faf9f6;
+  box-sizing: content-box;
+  height: 27px;
+}
+.botonmodificar:hover {
+  background-color: #faf9f6;
+  color: #d6beb7;
+  border: 1.75px solid #d6beb7;
+}
+
+.alert {
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: -50px;
+}
+
+.registro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* FOOTER*/
+footer {
+  /* display: flex;
+  justify-content: space-between; */
+  background-color: #d6beb7;
+  padding-top: 35px;
+  padding-left: 50px;
+  /* padding-right: 75px; */
+  padding-bottom: 20px;
+}
+
+.rrss {
+  cursor: pointer;
+  width: 100px;
+  height: 25px;
+}
+
+@media (max-width: 900px) {
+  .inicio img {
+    display: none;
+  }
+
+  .receta img {
+    width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  .receta {
+    margin-left: 20px;
+  }
+
+  .volver {
+    margin-left: 20px;
+  }
+  .tabReceta {
+    width: 100%;
+  }
+
+  .receta .nav-tabs {
+    width: 100%;
+  }
+
+  .alert {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
